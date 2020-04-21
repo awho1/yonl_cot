@@ -1,0 +1,212 @@
+@import _library
+
+.tarifs
+    background-color: #2CB5E5
+    margin-top: -21px
+    height: 1104px
+    background-image: url(/img/wrappers/tarifs_mobile.svg)
+    background-repeat: no-repeat
+    background-position: bottom
+    background-clip: content-box
+
+    &__title
+        font-size: 24px
+        line-height: 32px
+        font-weight: 400
+        color: #ffffff
+        padding-top: 10vh
+        margin: 0  0 32px 8vw
+        text-transform: uppercase
+
+    &-box
+        display: flex
+        flex-direction: column-reverse
+        justify-content: space-between
+        margin: 0
+        //margin-bottom: 248px
+
+    &-items
+        display: flex
+        flex-direction: row
+        overflow: auto
+        white-space: nowrap
+        margin-top: 72px
+        
+    &-item
+        box-sizing: border-box
+        height: 320px
+        width: 256px
+        background-color: #fff
+        border-radius: 4px
+        display: flex
+        flex-direction: column 
+        padding: 16px 16px 24px 16px
+        position: relative
+        margin-left: 16px
+
+        &:nth-child(1)
+            margin-left: 8vw
+
+        &__img
+            position: absolute
+            top: -2px
+            right: 16px
+
+        &__subtitle
+            font-size: 12px
+            line-height: 16px
+            color: #959595
+            text-transform: uppercase
+            margin: 0
+
+        &__title
+            font-size: 24px
+            line-height: 32px
+            color: #2CB5E5
+            margin: 0 0 24px 0
+
+        &__cost
+            font-size: 40px
+            line-height: 48px
+            color: #959595
+            display: inline-block
+            margin: 0 0 16px 0
+
+            &-description
+                display: inline-block
+                font-size: 10px
+                line-height: 14px
+                color: #959595
+                vertical-align: super
+
+            &-subtitle
+                font-size: 12px
+                line-height: 16px
+                color: #959595
+                margin: 0
+
+        &__list
+            list-style: none
+            padding: 0
+
+            &-item
+                font-size: 14px
+                line-height: 16px
+                margin-bottom: 16px
+                color: #959595
+
+                &::before
+                    content: ""
+                    background-color: #96C847
+                    border-radius: 50%
+                    height: 8px
+                    width: 8px
+                    margin-right: 5px
+                    display: inline-block
+                    vertical-align: middl
+
+    &-price
+        width: 100%
+
+        &__cost
+            font-size: 24px
+            line-height: 32px
+            font-weight: 400
+            color: #fff
+            margin: 0px 0 24px 8vw
+
+        &__subtitle
+            font-size: 16px
+            line-height: 24px
+            color: #ffffff
+            margin: 0px 0 16px 8vw
+
+        &__list
+            list-style: none
+            padding: 0 
+            list-style-position: inside
+            text-indent: each-line
+            margin-left: 8vw
+            margin-right: 8vw
+
+            &-item
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 16px
+                color: #ffffff
+                list-style-position: inside
+                    
+                &::before
+                    content: ""
+                    background-color: #fff
+                    border-radius: 50%
+                    height: 5px
+                    width: 5px
+                    margin-right: 8px
+                    display: inline-block
+                    vertical-align: middle
+.padding
+    display: block
+    width: 16px
+    height: 280px
+    padding-left: 16px
+
+@media ( min-width: $tablet-min ) and ( max-width: $tablet-max )
+    .tarifs
+        background-image: url(/img/wrappers/farifs_tablet.svg)
+
+
+@media ( min-width: $desctop ) 
+    .tarifs
+        height: 100vh
+        position: relative
+        background-image: url(/img/wrappers/tarifs_desctop.svg)
+
+        &-container
+            
+            //margin: 0 8vw  
+
+        &__title
+            font-size: 32px
+            line-height: 48px
+            padding-top: 20px
+            width: 1136px
+            padding-top: 10vh
+            margin: 0 auto 7vh auto
+
+        &-box
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            width: 1136px 
+            margin-bottom: 0
+            margin: 0 auto
+
+        &-items
+            width: 800px
+            justify-content: space-between
+            margin-right: 16px
+            margin-top: 0
+
+        &-item
+            
+            &:first-child
+                margin-left: 0
+
+        &-price
+            width: 300px
+
+            &__cost
+                margin: 32px 0 24px 0
+
+
+            &__subtitle
+                margin: 0
+
+            &__list
+                margin-left: 0
+                margin-right: 0
+
+
+    .padding
+        display: none

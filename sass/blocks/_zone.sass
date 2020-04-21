@@ -1,0 +1,183 @@
+@import _library
+
+.zone
+    background-color: #96C847
+    overflow: hidden
+    position: relative
+
+    &-cotainer
+        position: relative
+        
+    &__title
+        margin: 48px 0 40px 8vw
+        font-size: 24px 
+        line-height: 32px
+        text-transform: uppercase
+        color: #fff
+        font-weight: 400
+
+    &__text
+
+        font-size: 16px
+        line-height: 24px
+        color: #fff
+        margin: 0 8vw 24px 7vw
+        font-weight: 400
+
+    &__subtitle
+        text-transform: uppercase
+        font-weight: 600
+        color: #fff
+        margin: 0 8vw 24px 7vw 
+
+    &-links
+        margin: 0 8vw 32px 7vw
+
+        &__link
+            text-decoration: none
+
+        &__title
+            font-size: 16px
+            line-height: 24px
+            color: #ffffff
+            text-decoration: underline
+            font-weight: 400
+            margin: 0 0 24px 0
+
+    &__btn
+        box-sizing: border-box
+        background-color: #fff
+        height: 48px
+        color: #96C847
+        width: max-content
+        line-height: 24px
+        padding: 12px 24px
+        border-radius: 4px
+        margin: 0 0 60px 8vw
+
+        & > img
+            vertical-align: middle
+            margin-right: 8px
+
+
+    &__img
+        position: absolute
+        right: -240px
+        top: 400px
+        height: 196px
+
+@media ( min-width: $tablet-min ) and ( max-width: $tablet-max )
+    .zone
+        margin-top: -2px
+
+        &__img
+            position: absolute
+            right: -70px
+            top: 230px
+            height: 187px
+
+        &-links
+            width: 440px
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: stretch
+            margin: 0 8vw 32px 8vw
+                
+            &__link
+                width: 190px
+                text-decoration: none
+
+            &__title
+                font-size: 16px
+                line-height: 24px
+                color: #fff
+                text-decoration: underline
+                font-weight: 400
+                margin: 0 0 16px 0
+
+
+@media ( min-width: $desctop ) 
+    .zone
+        background-color: #96C847
+        height: 660px
+        overflow: hidden
+
+        &-container
+            width: 1136px
+            margin: 0 auto
+            position: relative
+
+        &__title
+            font-size: 32px
+            line-height: 48px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            padding-top: 10vh
+            margin: 0 auto 7vh auto
+
+        &__text
+            width: 480px
+            font-size: 16px
+            line-height: 28px
+            color: #fff
+            margin: 0 0 32px 0
+            font-weight: 400
+
+        &__subtitle
+            text-transform: uppercase
+            font-weight: 600
+            color: #fff
+            margin: 0 0 24px 0
+
+        &-links
+            width: 440px
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: stretch
+            margin: 0 0 32px 0
+            
+            &__link
+                width: 190px
+                text-decoration: none
+
+            &__title
+                font-size: 16px
+                line-height: 24px
+                color: #fff
+                text-decoration: underline
+                font-weight: 400
+                margin: 0 0 16px 0
+
+        &__btn
+            box-sizing: border-box
+            background-color: #fff
+            height: 48px
+            color: #96C847
+            width: max-content
+            line-height: 24px
+            padding: 12px 24px
+            border-radius: 4px
+            cursor: pointer
+            margin: 0 0 0px 0
+
+            & > img
+                vertical-align: middle
+                margin-right: 8px
+                transition: 300ms ease-in
+
+            &:hover
+                
+                & > img
+                    transform: rotate(180deg)
+                    transition: 300ms ease-in
+
+        &__img
+            position: absolute
+            right: -120px
+            top: 140px
+            height: auto

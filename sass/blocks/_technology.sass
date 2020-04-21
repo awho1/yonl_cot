@@ -1,0 +1,264 @@
+@import _library
+
+.technology
+    background-color: #2CB5E5
+    height: 1780px
+    position: relative
+    background-image: url(/img/wrappers/tech_mobile.svg)
+    background-repeat: no-repeat
+    background-position: bottom
+    background-clip: content-box
+
+    &-cotainer
+        position: relative
+
+    &__title
+        padding-top: 48px
+        margin: 0px 0 40px 8vw
+        font-size: 24px 
+        line-height: 32px
+        text-transform: uppercase
+        color: #fff
+        font-weight: 400
+
+    &__text
+        color: #fff
+        font-weight: 400
+        margin: 0px 8vw 40px 8vw
+        top: 1320px
+        position: absolute
+
+    &-schema
+        display: flex
+        flex-direction: column
+        align-items: center
+        
+
+        &-box-one
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            height: 680px
+            margin-bottom: 24px
+
+            & > .technology-schema-item
+                margin-top: 16px
+
+        &-box-two
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            width: 280px
+            margin: 0 8vw 0 8vw
+
+            & > .technology-schema-item
+                margin-bottom: 16px
+
+        &-item
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 116px
+            text-align: center
+
+            & > p
+                color: #fff
+
+            &:nth-child(5) 
+                
+                & > p
+                    font-size: 14px
+
+    &__btn
+        box-sizing: border-box
+        background-color: #fff
+        height: 48px
+        color: #2CB5E5
+        width: 176px
+        line-height: 24px
+        padding: 12px 24px
+        border-radius: 4px
+        margin: 16px 0 0px 8vw
+        position: absolute
+        top: 1450px
+
+.line
+    display: inline-block
+    border: 0
+    border-bottom: 2px dashed #fff
+
+    &_one
+        width: 60px
+        transform: rotate(90deg)
+        margin: 0 
+
+    &_two
+        width: 144px
+        margin: 0 0px 32px 0 
+
+    &_three
+        width: 60px
+        transform: rotate(90deg)
+        margin: -16px 0 0 0
+
+.cabel
+    display: flex
+    flex-direction: column
+    transform: rotate(90deg)
+
+    &__text
+        font-size: 14px
+        margin: 0
+        padding-bottom: 4px
+        color: #fff
+        text-align: center
+
+@media ( min-width: $tablet-min ) and ( max-width: $tablet-max )
+    .technology
+        background-image: url(/img/wrappers/tech_tablet.svg)
+        display: flex
+        justify-content: center
+        height: 1680px
+
+
+        &-schema-box-two
+            margin: 32px auto
+            width: 460px
+
+            & > .technology-schema-item
+                    margin-bottom: 32px
+        
+        &__text
+            color: #fff
+            font-weight: 400
+            margin: 0 88px
+            width: 380px
+            top: 1200px
+            position: absolute
+
+        &__btn
+            top: 1328px
+            margin: 0 180px
+
+
+@media ( min-width: $desctop ) 
+    .technology
+        background-color: #2CB5E5
+        height: 780px
+        background-image: url(/img/wrappers/tech_desctop.svg)
+        background-repeat: no-repeat
+        background-position: bottom
+        background-clip: content-box
+
+        &-container
+            width: 1136px
+            margin: 0 auto
+            position: relative
+
+        &__title
+            font-size: 32px
+            line-height: 48px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            width: 1136px
+            padding-top: 54px
+            margin: 0 auto 7vh auto
+
+        &__text
+            width: 480px
+            color: #fff
+            font-weight: 400
+            margin: 280px 0 32px 0
+            top: 0
+            position: relative
+            
+        &-schema
+            display: flex
+            flex-direction: row
+            align-items: flex-start
+            position: absolute
+            top: 190px
+
+            &-box-one
+                display: flex
+                flex-direction: row
+                align-items: flex-start
+                height: auto
+                margin-bottom: 0px
+
+                & > .technology-schema-item
+                    margin-top: 0px
+
+            &-box-two
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                width: 300px
+                height: 450px
+                margin: 0
+                margin-left: 24px
+                
+                & > .technology-schema-item
+                    margin-bottom: 16px
+
+            &-item
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 116px
+                text-align: center
+
+                & > p
+                    color: #fff
+
+                &:nth-child(5) 
+                
+                    & > p
+                        font-size: 16px
+
+        &__btn
+            box-sizing: border-box
+            background-color: #fff
+            height: 48px
+            color: #2CB5E5
+            width: 178px
+            line-height: 24px
+            padding: 12px 24px
+            border-radius: 4px
+            cursor: pointer
+            margin: 16px 0 0px 0
+            top: 480px
+            z-index: 10
+
+    .line
+        display: inline-block
+        border: 0
+        border-bottom: 2px dashed #fff
+        margin-top: 34px
+
+        &_one
+            width: 108px
+            transform: rotate(0deg)
+
+        &_two
+            width: 164px
+            margin-top: 8px
+
+        &_three
+            width: 136px
+            transform: rotate(0deg)
+
+    .cabel
+        display: flex
+        flex-direction: column
+        transform: rotate(0deg)
+        
+
+        &__text
+            font-size: 14px
+            margin: 0
+            color: #fff
+            text-align: center
+            
