@@ -9,18 +9,18 @@ jQuery(document).ready(function ()  {
     if(screen.width < '1200'){
 
         //Прокрутка до блока заявки (телефоны, планшеты)
-        $('.technology__btn').on('click',function () {
+        $('.technology__btn, .tarifs-item').on('click',function () {
 
-            var scrollTop = $('.mobile-block-form').offset().top;
+            var mobileForm = $('.mobile-block-form').offset().top;
 
-            $('html, body').animate({scrollTop:scrollTop},'slow');
+            $('html, body').animate({scrollTop:mobileForm},'slow');
 
         });
 
     }else{
 
     //Прокрутка на главный экран для десктопов
-    $('.technology__btn').on('click',function () {
+    $('.technology__btn, .tarifs-item').on('click',function () {
 
             $('html, body').animate({scrollTop:0},'slow');
             
@@ -28,7 +28,7 @@ jQuery(document).ready(function ()  {
     };
 
   
-    $('.zone__btn').on('click',function () {
+    $('.zone__btn, .open-popup').on('click',function () {
 
         if(screen.width < '600') {
 

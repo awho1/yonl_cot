@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Arial', 'Verdana', 'Tahoma', 'Cambria', 'Calibri', sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -433,6 +433,9 @@ body {
     padding: 0 16px;
     color: #959595;
   }
+  .wrapper-form__select:focus {
+    outline: none;
+  }
   .wrapper-form__select:first-child {
     width: 304px;
     border-radius: 4px 0 0 4px;
@@ -455,9 +458,12 @@ body {
   .wrapper-form__input:placeholder {
     color: #959595;
   }
+  .wrapper-form__input:focus {
+    outline: none;
+  }
   .wrapper-form__btn {
     height: 56px;
-    margin-left: -4px;
+    margin-left: -5px;
     border: none;
     padding: 0 16px;
     border-radius: 0 4px 4px 0;
@@ -484,6 +490,10 @@ body {
   }
   .mobile-menu {
     display: none;
+  }
+  .open-popup {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 
@@ -644,10 +654,7 @@ body {
 }
 
 .tarifs-price__list {
-  list-style: none;
-  padding: 0;
-  list-style-position: inside;
-  text-indent: each-line;
+  padding: 0 0 0 20px;
   margin-left: 8vw;
   margin-right: 8vw;
 }
@@ -657,18 +664,6 @@ body {
   line-height: 24px;
   margin-bottom: 16px;
   color: #ffffff;
-  list-style-position: inside;
-}
-
-.tarifs-price__list-item::before {
-  content: "";
-  background-color: #fff;
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  margin-right: 8px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .padding {
@@ -720,6 +715,9 @@ body {
             justify-content: space-between;
     margin-right: 16px;
     margin-top: 0;
+  }
+  .tarifs-item {
+    cursor: pointer;
   }
   .tarifs-item:first-child {
     margin-left: 0;
@@ -1452,7 +1450,9 @@ body {
   top: 0;
   background-color: #fff;
   border-radius: 4px;
-  height: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 40px 5vw 32px 5vw;
   position: fixed;
   z-index: 100;
@@ -1628,7 +1628,9 @@ body {
     background-color: #fff;
     border-radius: 4px;
     width: 613px;
-    height: 624px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     padding: 40px 32px 32px 32px;
     position: fixed;
     overflow: hidden;
@@ -1733,9 +1735,9 @@ body {
   .popup__img {
     display: inline-block;
     position: absolute;
-    top: 350px;
+    top: 380px;
     right: -40px;
-    width: 300px;
+    width: 320px;
   }
 }
 
@@ -1880,7 +1882,9 @@ body {
     background-color: #fff;
     border-radius: 4px;
     width: 874px;
-    height: 412px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     padding: 40px 32px 32px 32px;
     position: fixed;
     overflow: hidden;
@@ -2005,8 +2009,9 @@ body {
   .popup__img {
     display: inline-block;
     position: absolute;
-    top: 40px;
+    top: 60px;
     right: 32px;
+    width: 380px;
   }
 }
 /*# sourceMappingURL=style.css.map */

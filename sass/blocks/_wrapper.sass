@@ -369,6 +369,9 @@
                 border: none
                 padding: 0 16px
                 color: #959595
+                
+                &:focus
+                    outline: none
 
 
                 &:first-child
@@ -376,12 +379,12 @@
                     border-radius: 4px 0 0 4px
                     border-right: 2px solid #F3F3F3
                     margin-right: -5px
-
+                    
                 &:last-child
                     width: 280px
                     border-radius: 4px 0 0 4px
                     border-right: 1px solid #F3F3F3
-
+                    
             &__input
                 height: 56px
                 border: none
@@ -393,9 +396,12 @@
                 &:placeholder
                     color: #959595
 
+                &:focus
+                    outline: none
+
             &__btn
                 height: 56px
-                margin-left: -4px
+                margin-left: -5px
                 border: none
                 padding: 0 16px
                 border-radius: 0 4px 4px 0
@@ -423,6 +429,10 @@
 
     .mobile-menu
         display: none
+
+    .open-popup
+        cursor: pointer
+        text-decoration: underline
 
 
 
