@@ -1450,9 +1450,7 @@ body {
   top: 0;
   background-color: #fff;
   border-radius: 4px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 100%;
   padding: 40px 5vw 32px 5vw;
   position: fixed;
   z-index: 100;
