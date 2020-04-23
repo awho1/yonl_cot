@@ -66,6 +66,8 @@
                 </a>
             </div>
             <form class="wrapper-form" method="POST" action="">
+                <p class="wrapper-form__msg wrapper-form__msg_seccess">Спасибо! Ваша заявка отправлена!</p>
+                <p class="wrapper-form__msg wrapper-form__msg_error">Упс! Произошла ошибка, попробуйте еще раз</p>
                 <select class="wrapper-form__select" name="tarif">
                     <option class="wrapper-form__select-option" hidden disabled selected>Выберите тариф</option>
                     <option class="wrapper-form__select-option">Интернет 50</option>
@@ -93,6 +95,8 @@
         <section class="mobile-block-form">
             <h2 class="mobile-form__title">Заявка <br>на подключение</h2>
             <form class="mobile-form" method="POST" action="">
+                <p class="mobile-form__msg mobile-form__msg_seccess">Спасибо! Ваша заявка отправлена!</p>
+                <p class="mobile-form__msg mobile-form__msg_error">Произошла ошибка!</p>
                 <select class="mobile-form__select" name="tarif">
                     <option class="mobile-form__select-option" hidden disabled selected>Выберите тариф</option>
                     <option class="mobile-form__select-option">Интернет 50</option>
@@ -346,14 +350,14 @@
         Наличие в СНТ оптического интернета сопоставимо с наличием газопровода, повышает статус и развивает инфраструктуру садоводства<br><br>
         Для СНТ предоставляем услуги:
         </p>
-        <p class="popup__text">
-            </p>
         <ul class="popup__list">
             <li class="popup__list-item">Стройка сети PON на территории СНТ;</li>
             <li class="popup__list-item">Организация видеонаблюдения на территори СНТ;</li>
             <li class="popup__list-item">Предоставление сети в пользование для целей СНТ;</li>
         </ul>
         <form class="popup-form">
+            <p class="popup-form__msg popup-form__msg_seccess">Ваша заявка отправлена</p>
+            <p class="popup-form__msg popup-form__msg_error">Произошла ошибка</p>
             <input class="popup-form__input" type="text" name="region" placeholder="Название СНТ" required>
             <input class="popup-form__input" type="text" name="name" placeholder="Контактное лицо" required>
             <input class="popup-form__input" type="tel" name="phone" id="therd-phone" placeholder="Номер телефона" required>

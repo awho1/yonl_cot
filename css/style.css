@@ -154,6 +154,22 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 8vw;
+  position: relative;
+}
+
+.mobile-form__msg {
+  position: absolute;
+  font-size: 14px;
+  top: -44px;
+  color: #fff;
+}
+
+.mobile-form__msg_seccess {
+  display: none;
+}
+
+.mobile-form__msg_error {
+  display: none;
 }
 
 .mobile-form__select {
@@ -165,7 +181,7 @@ body {
   background-color: #fff;
 }
 
-.mobile-form__select:first-child {
+.mobile-form__select:nth-child(3) {
   border-radius: 4px 4px 0 0;
 }
 
@@ -425,7 +441,24 @@ body {
   }
   .wrapper-form {
     display: block;
-    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .wrapper-form__msg {
+    position: absolute;
+    left: 0;
+    top: -48px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .wrapper-form__msg_seccess {
+    display: none;
+  }
+  .wrapper-form__msg_error {
+    display: none;
   }
   .wrapper-form__select {
     height: 56px;
@@ -436,7 +469,7 @@ body {
   .wrapper-form__select:focus {
     outline: none;
   }
-  .wrapper-form__select:first-child {
+  .wrapper-form__select:nth-child(3) {
     width: 304px;
     border-radius: 4px 0 0 4px;
     border-right: 2px solid #F3F3F3;
@@ -1517,8 +1550,24 @@ body {
 
 .popup-form {
   display: block;
-  text-align: center;
-  margin-top: 32px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.popup-form__msg {
+  position: absolute;
+  font-size: 14px;
+  top: -44px;
+}
+
+.popup-form__msg_seccess {
+  color: #9bbb31;
+  display: none;
+}
+
+.popup-form__msg_error {
+  color: #FF7B7B;
+  display: none;
 }
 
 .popup-form__input {
@@ -1538,7 +1587,7 @@ body {
   color: #959595;
 }
 
-.popup-form__input:placeholder:nth-child(1) {
+.popup-form__input:placeholder:nth-child(3) {
   border-radius: 4px 0 0 4px;
 }
 
@@ -1879,7 +1928,7 @@ body {
     margin: auto auto;
     background-color: #fff;
     border-radius: 4px;
-    width: 874px;
+    width: 894px;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -1951,7 +2000,7 @@ body {
     border: none;
     padding: 0 16px;
     color: #959595;
-    margin-left: -4px;
+    margin-left: -5px;
     border: 1px solid #F3F3F3;
     margin-bottom: 0px;
     width: auto;
@@ -1969,6 +2018,9 @@ body {
   }
   .popup-form__input:nth-child(3) {
     width: 202px;
+  }
+  .popup-form__input:focus {
+    outline: none;
   }
   .popup-form__btn {
     height: 56px;

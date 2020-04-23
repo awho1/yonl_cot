@@ -145,8 +145,21 @@
 
     &-form
         display: block
-        text-align: center
-        margin-top: 32px
+        margin-top: 40px
+        position: relative
+
+        &__msg
+            position: absolute
+            font-size: 14px
+            top: -44px
+
+            &_seccess
+                color: #9bbb31
+                display: none
+
+            &_error
+                color: #FF7B7B
+                display: none
 
         &__input
             box-sizing: border-box
@@ -162,8 +175,7 @@
             &:placeholder
                 color: #959595
 
-                &:nth-child(1)
-
+                &:nth-child(3)
                     border-radius: 4px 0 0 4px
 
         &__btn
@@ -453,7 +465,7 @@
         margin: auto auto
         background-color: #fff
         border-radius: 4px
-        width: 874px
+        width: 894px
         height: max-content
         padding: 40px 32px 32px 32px
         position: fixed
@@ -522,7 +534,7 @@
                 border: none
                 padding: 0 16px
                 color: #959595
-                margin-left: -4px
+                margin-left: -5px
                 border: 1px solid #F3F3F3
                 margin-bottom: 0px
                 width: auto
@@ -540,6 +552,9 @@
 
                 &:nth-child(3)
                     width: 202px
+
+                &:focus
+                    outline: none
 
             &__btn
                 height: 56px
