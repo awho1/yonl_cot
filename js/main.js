@@ -150,6 +150,38 @@ jQuery(document).ready(function ()  {
                 $('.mobile-form').trigger('reset');
             }
         });
+    });
+
+    $('.popup-form').on('submit', function (e) {
+        e.preventDefault();
+        //Делаем кнопу не активной после нажатия
+        $('.popup-form__btn').click(function() {
+            $(this).attr('disabled', true);
+            //setTimeout(function() {
+            //    $("#check-adress-btn").attr('disabled', false);
+            //   }, 2000);
+          });
+        //Делаем запрос
+        $.ajax({
+            type: 'POST',
+            url: 'mail-2.php',
+            data: $('.popup-form').serialize(),
+            success: function () {
+                $('.popup-form__msg_seccess').show();
+                //После отправки сбрасываем форму
+                $('.popup-form').trigger('reset');
+                setTimeout(function() {
+                    $('.popup-overlay').hide();
+                    $('.popup').hide();
+                    $('body').toggleClass('mobile-menu-opened');
+                }, 3000);
+            },
+            error: function () {
+                $('.popup-form__error-msg').show();
+                //После отправки сбрасываем форму
+                $('.popup-form').trigger('reset');
+            }
+        });
     }); 
     
 });

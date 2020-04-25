@@ -359,8 +359,8 @@
             <p class="popup-form__msg popup-form__msg_seccess">Ваша заявка отправлена</p>
             <p class="popup-form__msg popup-form__msg_error">Произошла ошибка</p>
             <input class="popup-form__input" type="text" name="region" placeholder="Название СНТ" required>
-            <input class="popup-form__input" type="text" name="name" placeholder="Контактное лицо" required>
-            <input class="popup-form__input" type="tel" name="phone" id="therd-phone" placeholder="Номер телефона" required>
+            <input class="popup-form__input" type="text" name="contact-name" placeholder="Контактное лицо" required>
+            <input class="popup-form__input" type="tel" name="phone-number" id="therd-phone" placeholder="Номер телефона" required>
             <button class="popup-form__btn" type="submit">Отправить заявку</button>
             <p class="popup-form__text">Нажимая кнопку “Отправить заявку” Вы соглашатесь с <a href="#">политикой обработки персональных данных</a></p>
         </form>
