@@ -1511,7 +1511,7 @@ body {
   margin: 0 0 24px 0;
   font-size: 24px;
   line-height: 32px;
-  color: #96C847;
+  color: #9bbb31;
   font-weight: 400;
   width: 282px;
 }
@@ -1539,7 +1539,7 @@ body {
 
 .popup__list-item::before {
   content: "";
-  background-color: #96C847;
+  background-color: #9bbb31;
   border-radius: 50%;
   height: 8px;
   width: 8px;

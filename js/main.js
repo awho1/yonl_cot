@@ -98,5 +98,58 @@ jQuery(document).ready(function ()  {
 
     });
     
+    $('.wrapper-form').on('submit', function (e) {
+        e.preventDefault();
+        //Делаем кнопу не активной после нажатия
+        $('.wrapper-form__btn').click(function() {
+            $(this).attr('disabled', true);
+            //setTimeout(function() {
+            //    $("#check-adress-btn").attr('disabled', false);
+            //   }, 2000);
+          });
+        //Делаем запрос
+        $.ajax({
+            type: 'POST',
+            url: 'mail.php',
+            data: $('.wrapper-form').serialize(),
+            success: function () {
+                $('.wrapper-form__msg_seccess').show();
+                //После отправки сбрасываем форму
+                $('.wrapper-form').trigger('reset');
+            },
+            error: function () {
+                $('.wrapper-form__error-msg').show();
+                //После отправки сбрасываем форму
+                $('.wrapper-form').trigger('reset');
+            }
+        });
+    });
+
+    $('.mobile-form').on('submit', function (e) {
+        e.preventDefault();
+        //Делаем кнопу не активной после нажатия
+        $('.wrapper-form__btn').click(function() {
+            $(this).attr('disabled', true);
+            //setTimeout(function() {
+            //    $("#check-adress-btn").attr('disabled', false);
+            //   }, 2000);
+          });
+        //Делаем запрос
+        $.ajax({
+            type: 'POST',
+            url: 'mail.php',
+            data: $('.mobile-form').serialize(),
+            success: function () {
+                $('.mobile-form__msg_seccess').show();
+                //После отправки сбрасываем форму
+                $('.mobile-form').trigger('reset');
+            },
+            error: function () {
+                $('.mobile-form__error-msg').show();
+                //После отправки сбрасываем форму
+                $('.mobile-form').trigger('reset');
+            }
+        });
+    }); 
     
 });
